@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Potential SLR Inundation and Erosion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+	<link href="css/sjpt-style.css" rel="stylesheet">
+    <style>
+			body { margin:0; padding:0; }
+			#map { position:absolute; top:0; bottom:0; width:100%; }
+			.mapboxgl-popup {
+				max-width: 400px;
+				font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+			}
+    </style>
+
+<!-- load functions & object definitions that we'll call later -->
+		<script src='scripts/functions.js'></script>
+
+  </head>
+
+  <body>
+    <div id="map"></div>
+    <div id="console">
+      <h1>Potential Inundation and Erosion, High Scenario, 2100</h1>
+
+			<div class='legend'>
+				<div class='legend-title'>Legend</div>
+					<div class='legend-scale'>
+							<ul class='legend-labels'>
+							<li><span style='background:#cd1313;'></span>Potential Inundation, 2100</li>
+							<li><span style='background:#fe910b;'></span>Potential Erosion, 2100</li>
+							<li><span style='outline:#194D33;'></span>Parcel Boundaries</li>
+							</ul>
+						<div class='legend-source'>Source: <a href="http://sanjuans.org/"  target="_blank">Friends of the San Juans</a></div>
+					<div class='map-credit'>Map design by <a href="http://www.coregis.net/"  target="_blank">CORE GIS</a></div>
+					</div>
+				</div>
+
+      </div>
+    </div>
+
+<!-- JS that needs the map element to exist before it can run -->
+		<script src='scripts/onload.js'></script>
+
+  </body>
+</html>
